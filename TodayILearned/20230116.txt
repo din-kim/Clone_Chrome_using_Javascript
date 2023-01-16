@@ -1,0 +1,7 @@
+# TIL 2023/01/16 - The Basic Grammar of Javascript
+- Data types
+- Variables
+- Const and let
+- Arrays
+- Objects
+- Functions

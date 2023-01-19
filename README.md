@@ -1,4 +1,4 @@
-# Clone Chrome using Javascript
+# Clone Momentum using Javascript
 
 - Learn the fundamentals of Javascript by Cloning Chrome
 - Learning Source: Nomad Code

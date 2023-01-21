@@ -6,20 +6,25 @@ let todos = [];
 function newTodoList(event) {
     event.preventDefault();
     const newTodo = todoInput.value;
+    const newTodoObj = {
+        text: newTodo,
+        id: Date.now(),
+    };
     todoInput.value = "";
-    todos.push(newTodo);
-    addTodo(newTodo);
+    todos.push(newTodoObj);
+    addTodo(newTodoObj);
     saveTodos();
 }
 
-function addTodo(newTodo) {
+function addTodo(newTodoObj) {
     const li = document.createElement("li");
     const span = document.createElement("span");
     const btn = document.createElement("button");
     li.appendChild(span);
     li.appendChild(btn);
+    li.id = newTodoObj.id;
 
-    span.innerText = newTodo;
+    span.innerText = newTodoObj.text;
     btn.innerText = "X";
     
     todoList.appendChild(li);
@@ -29,6 +34,8 @@ function addTodo(newTodo) {
 function deleteTodo(event) {
     const li = event.target.parentElement;
     li.remove();
+    todos = todos.filter((todo) => todo.id !== parseInt(li.id));
+    saveTodos();
 }
 
 function saveTodos() {

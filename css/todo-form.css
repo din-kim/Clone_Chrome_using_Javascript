@@ -1,5 +1,18 @@
+#todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-form__question {
+  margin-top: 40px;
+  color: white;
+  font-size: 36px;
+}
+
 .todo-form__input {
-  width: 33%;
+  width: 40%;
   color: white;
   border-bottom: 2px solid white;
   border-top-style: hidden;

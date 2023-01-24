@@ -1,4 +1,7 @@
 #quote {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -7,7 +10,7 @@
 
 #quote span:first-child {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 #quote span:last-child {

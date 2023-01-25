@@ -1,0 +1,10 @@
+#weather {
+  text-align: right;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+#weather span {
+  margin-left: 20px;
+}
